@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Header Section */
+.header-section {
+    background-color: rgb(81,146,91);
+    padding: 10px 0;
+    /* opacity: 0%; */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .header-section .brand-name img {
+    height: 100%;
+    width: 180px;
+    object-fit: contain;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-wrapper {
+    border: 4px solid #000;
+    border-radius: 999px;
+    padding: 20px 0px;
+    box-shadow: rgb(16, 18, 40) 4px 9px 0px 0px;
   }
-}
+  
+  .header-section .nav-link {
+    color: #000;
+    font-size: 1rem;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .header-section .nav-link:hover {
+    color: green;
+    cursor: pointer;
+  }
+  
+  .header-section .cta-btn {
+    background-color: green;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 4px solid #000;
+    border-radius: 999px;
+    padding: 20px 20px;
+    box-shadow: rgb(16, 18, 40) 4px 9px 0px 0px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-section .cta-btn:hover {
+    background-color: #e67e22;
+    border-color: #000;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    background-color: rgb(81,146,91);
+  }
+
+  .hero-row {
+    background-image: url("../public/images/mibo.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    /* margin-top: 50px; */
+    height: 100%;
+  }
+
+  .hero-section h1 {
+    color: #ffa946;
+    text-shadow: 6px 8px 0px rgba(0,0,0,0.72);
+    margin-top: 200px;
+  }
+
+  .hero-section p {
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #f39c12;
+    border-radius: 30px;
+    box-shadow: rgb(223, 173, 9) 6px 12px 0px 0px;
+    padding: 20px 22px;
+    align-items: center;
+    text-align: justify;
+  }
+  
+  .hero-section .hero_ctn {
+    background-color: green;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 4px solid #000;
+    border-radius: 999px;
+    padding: 20px 20px;
+    box-shadow: rgb(16, 18, 40) 4px 9px 0px 0px;
+    transition: background-color 0.3s ease;
+  }
+
+  .hero-section .hero_ctn:hover {
+    background-color: #e67e22;
+    border-color:#000;
+  }
+
+  .features-section h2 {
+    color: #f39c12;
+    text-shadow: 4px 5px 0px rgba(0,0,0,0.72);
+    font-weight: 600;
+  }
+
+  .about-section {
+    background-color: rgb(81,146,91);
+  }
+  
+  .about-section h2 {
+    color: #f39c12;
+    text-shadow: 6px 8px 0px rgba(0,0,0,0.72);
+  }
+
+  .how-to-buy {
+    background-color: #f4fcff;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: #f7c531;
+    text-shadow: 6px 8px 0px rgba(0,0,0,0.72);
+    margin-bottom: 2rem;
+  }
+  
+  .step-box {
+    background-color: #fff;
+    border: 7px solid #000;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    height: 420px;
+    text-align: left;
+    overflow-x: hidden;
+    width: 100%;
+    box-shadow: rgb(16, 18, 40) 12px 16px 0px 0px;
+    margin: 10px 0;
+  }
+  
+  .step-number {
+    background-color: #f7c531;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    font-size: 26px;
+    margin-right: 1rem;
+  }
+  
+  
+  /* Responsive font sizing */
+  @media (max-width: 992px) {
+    .header-section .brand-name {
+      font-size: 1.5rem;
+    }
+  
+    .header-section .nav-link {
+      font-size: 0.9rem;
+    }
+
+    .navbar-wrapper {
+        border: 0;
+        box-shadow: none;
+    }
+  
+    .header-section .cta-btn {
+      padding: 7px 14px;
+      font-size: 0.9rem;
+    }
+
+    .about-section {
+      padding: 40px 0px;
+      text-align: justify;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-section .brand-name {
+      font-size: 1.3rem;
+    }
+  
+    .header-section .nav-link {
+      font-size: 0.85rem;
+      margin: 0 10px;
+    }
+  
+    .header-section .cta-btn {
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
