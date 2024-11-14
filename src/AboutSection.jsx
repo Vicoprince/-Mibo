@@ -31,7 +31,7 @@ const AboutSection = () => {
             <Col md={6} className="text-center text-md-right">
               {/* Image of Mibo */}
               <Image 
-                src="https://via.placeholder.com/400" 
+                src="./images/mibo3.png" 
                 alt="Mibo"
                 fluid
                 style={{ borderRadius: '10px', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}
@@ -45,7 +45,7 @@ const AboutSection = () => {
             <Col md={6} className="text-center text-md-right">
               {/* Image of Mibo */}
               <Image 
-                src="https://via.placeholder.com/400" 
+                src="./images/mibo1.png" 
                 alt="Mibo"
                 fluid
                 style={{ borderRadius: '10px', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import '../App.css';
 
 const Header = () => {
@@ -20,7 +19,7 @@ const Header = () => {
               <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
               <Nav.Link href="#features" className="nav-link">Feature</Nav.Link>
               <Nav.Link href="#about" className="nav-link">About</Nav.Link>
-              <Nav.Link href="#contact" className="nav-link">Contact</Nav.Link>
+              <Nav.Link href="#buy" className="nav-link">How To Buy</Nav.Link>
             </Nav>
 
             {/* CTA Button on the right */}
