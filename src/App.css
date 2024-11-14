@@ -131,6 +131,7 @@
   justify-content: center;
   box-shadow: rgb(16, 18, 40) 10px 12px 0px 0px;
   width: 100%;
+  padding: 10px;
 }
 
   .card-title {
@@ -227,5 +228,13 @@
       font-size: 0.85rem;
       width: 100%;
       margin-top: 10px;
+    }
+
+    .features-section h2 {
+      font-size: 27px;
+    }
+
+    .card-title {
+      font-size: 24px !important;
     }
   }
