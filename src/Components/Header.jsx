@@ -23,7 +23,7 @@ const Header = () => {
             </Nav>
 
             {/* CTA Button on the right */}
-            <Button href='#buy' variant="primary" className="cta-btn">Buy Mibo</Button>
+            <Button href='https://pump.fun/coin/EYT5tkc56zBxjfDdqo8KcvU2QGg8JNWQLsgRqRL9pump' target='_blank' variant="primary" className="cta-btn">Buy Mibo</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
